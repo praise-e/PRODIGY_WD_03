@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praisee's Tic Tac Toe Game</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bigGameContainer">
+        <div id="headingAndScores">
+            <h1>Praisee's
+                    <span class="tic">Tic</span>
+                    <span class="tac">Tac</span>
+                    <span class="toe">Toe</span>
+            </h1>
+            <div class="playerX">Player X &nbsp; : &nbsp;&nbsp; <span id="XScore"></span></div>
+            <div class="Draw">Draws &nbsp; : &nbsp;&nbsp; <span id="draws"></span></div>
+            <div class="playerO">Player O &nbsp; : &nbsp;&nbsp;&nbsp; <span id="OScore"></span></div>
+        </div>
+        <div id="gridContainer">
+            <div class="cell" cellIndex="0"></div>
+            <div class="cell" cellIndex="1"></div>
+            <div class="cell" cellIndex="2"></div>
+            <div class="cell" cellIndex="3"></div>
+            <div class="cell" cellIndex="4"></div>
+            <div class="cell" cellIndex="5"></div>
+            <div class="cell" cellIndex="6"></div>
+            <div class="cell" cellIndex="7"></div>
+            <div class="cell" cellIndex="8"></div>
+        </div>
+
+    </div>
+    <div id="btnAndstatusText">
+        <div id="statusText"></div>
+        <button id="restartBtn">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

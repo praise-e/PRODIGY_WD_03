@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgba(0, 128, 0, 0.823) 50%, rgb(1, 68, 1) 85%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: serif;    
+    color: #06023ffe;
+}
+
+#bigGameContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#headingAndScores {
+    margin-left: 5%;
+}
+
+
+h1 {
+    font-family: serif;
+    color: #ffd700;
+    margin-bottom: 20%;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    border-bottom: 2px dotted #daa520;
+    border-radius: 6%;
+
+    .tic, .tac, .toe {
+        color: #fff;
+    }
+}
+
+
+
+.playerX, .Draw, .playerO {
+    background-color: #fff;
+    margin-top: 2.5%;
+    padding: 1.5%;
+    text-align: left;
+    border-radius: 6%;
+    height: 2rem;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    font-family: fantasy;
+    width: 55%;
+}
+
+#gridContainer {
+    width: 350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 5%;
+    border-radius: 2%;
+    border: 2px solid #daa520;
+}
+
+.cell {
+    width: 115px;
+    height: 115px;
+    border: 1px solid #daa520;
+    border-radius: 5%;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 5.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cell:active {
+    background-color: rgb(1, 68, 1);
+}
+
+#btnAndstatusText {
+    margin-top: 5%;
+}
+
+#statusText {
+    color: #fff;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+button {
+    background-color: inherit;
+    color: #fff;
+    border: 1px solid gold;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 6%;
+    cursor: pointer;
+    font-family: serif;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #ffd700;
+    border: 1px solid rgb(218, 237, 95);
+    color: #06023ffe;
+}
+
+@media (max-width: 900px) {
+   
+    #bigGameContainer {
+        display: block;
+    }
+    
+}
